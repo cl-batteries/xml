@@ -17,7 +17,7 @@
 ;;;; under the License.
 ;;;;
 
-(in-package :xml)
+(in-package :boost-xml)
 
 ;;; ----------------------------------------------------
 

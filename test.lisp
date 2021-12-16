@@ -2,7 +2,7 @@
 ;;;;
 
 (eval-when (:compile-toplevel :load-toplevel :execute)
-  (use-package :xml))
+  (use-package :boost-xml))
 
 (defparameter *test-path* #p"d:/ccl-projects/xml/test/xmltest/"
   "Location on disk where the test suite resides.")

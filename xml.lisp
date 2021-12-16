@@ -17,8 +17,8 @@
 ;;;; under the License.
 ;;;;
 
-(defpackage :cl-batteries/xml
-  (:use :cl :cl-batteries/parse :cl-batteries/re :cl-batteries/lexer :cl-batteries/markup)
+(defpackage :boost-xml
+  (:use :cl :boost-parse :boost-re :boost-lexer :boost-markup)
   (:export
 
    ;; parsing, loading, and reading
@@ -73,7 +73,7 @@
    #:xml-name-char-p
    #:xml-token-char-p))
 
-(in-package :cl-batteries/xml)
+(in-package :boost-xml)
 
 ;;; ----------------------------------------------------
 
