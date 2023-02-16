@@ -798,7 +798,8 @@
 
                         ;; anything else, just assume utf-8
                         (t :utf-8))))
-      (sb-ext:octets-to-string bytes :external-format format))))
+      #+sbcl (sb-ext:octets-to-string bytes :external-format format)
+      #+lispworks (external-format:decode-external-string bytes format))))
 
 ;;; ----------------------------------------------------
 
