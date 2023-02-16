@@ -1,4 +1,4 @@
-;;;; Non-validating, Lightweight XML parser for SBCL
+;;;; Non-validating, Lightweight XML parser for Common Lisp
 ;;;;
 ;;;; Copyright (c) Jeffrey Massung
 ;;;;

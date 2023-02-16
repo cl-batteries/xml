@@ -1,4 +1,4 @@
-;;;; Non-validating, Lightweight XML parser for ClozureCL
+;;;; Non-validating, Lightweight XML parser for Common Lisp
 ;;;;
 ;;;; Copyright (c) Jeffrey Massung
 ;;;;
@@ -64,7 +64,7 @@
    (values :att (subseq $$ 1)))
 
   ;; read an xml symbol
-  ("%%[^/]+" (let ((symbol (intern (string-upcase $$) :xml)))
+  ("%%[^/]+" (let ((symbol (intern (string-upcase $$) :boost-xml)))
                (values :apply `(symbol-value ',symbol))))
 
   ;; read a symbol to use as a map function
